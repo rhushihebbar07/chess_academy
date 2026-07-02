@@ -1,0 +1,230 @@
+/*==================================================
+RESPONSIVE.CSS
+Mobile First
+==================================================*/
+
+html,body{
+    overflow-x:hidden;
+}
+
+.container{
+    width:min(calc(100% - 2rem),1200px);
+    margin-inline:auto;
+}
+
+img,video{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.section{
+    padding:80px 0;
+}
+
+h1{font-size:clamp(2.5rem,9vw,6rem);}
+h2{font-size:clamp(2rem,6vw,4rem);}
+h3{font-size:clamp(1.3rem,4vw,2rem);}
+p{font-size:clamp(.95rem,2vw,1.05rem);line-height:1.8;}
+
+.hero{
+    min-height:100vh;
+    padding:120px 0 70px;
+    text-align:center;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.btn-premium,
+.btn-secondary{
+    width:100%;
+    justify-content:center;
+}
+
+.about-grid,
+.contact-wrapper,
+.why-grid,
+.course-grid,
+.coach-grid,
+.gallery-grid,
+.testimonial-slider,
+.footer-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.about-features{
+    grid-template-columns:1fr;
+}
+
+.floating-card{
+    position:static;
+    margin-top:20px;
+}
+
+.contact-form button{
+    width:100%;
+}
+
+.footer-grid{
+    text-align:center;
+}
+
+.socials{
+    justify-content:center;
+}
+
+.whatsapp{
+    right:20px;
+    bottom:20px;
+}
+
+#topBtn{
+    right:20px;
+    bottom:95px;
+}
+
+.nav-menu{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:80%;
+    max-width:320px;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:25px;
+    background:#080808;
+    transition:.4s;
+}
+
+.nav-menu.active{
+    right:0;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+.desktop-only{
+    display:none!important;
+}
+
+@media(min-width:768px){
+
+.hero-buttons{
+    flex-direction:row;
+    justify-content:center;
+}
+
+.about-grid,
+.contact-wrapper{
+    grid-template-columns:1fr 1fr;
+}
+
+.why-grid,
+.course-grid,
+.coach-grid,
+.gallery-grid,
+.testimonial-slider{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.footer-grid{
+    grid-template-columns:repeat(2,1fr);
+    text-align:left;
+}
+
+.socials{
+    justify-content:flex-start;
+}
+
+.btn-premium,
+.btn-secondary{
+    width:auto;
+}
+
+}
+
+@media(min-width:1024px){
+
+.menu-toggle{
+    display:none;
+}
+
+.desktop-only{
+    display:flex!important;
+}
+
+.nav-menu{
+    position:static;
+    width:auto;
+    height:auto;
+    background:transparent;
+    flex-direction:row;
+    gap:35px;
+}
+
+.hero{
+    text-align:left;
+}
+
+.hero-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.hero-buttons{
+    justify-content:flex-start;
+}
+
+.course-grid,
+.coach-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.testimonial-slider{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.footer-grid{
+    grid-template-columns:2fr 1fr 1fr 1fr;
+}
+
+}
+
+@media(min-width:1440px){
+
+.container{
+    max-width:1320px;
+}
+
+.section{
+    padding:140px 0;
+}
+
+}
+
+@media(max-width:360px){
+
+.container{
+    width:calc(100% - 1rem);
+}
+
+.hero{
+    padding-top:100px;
+}
+
+}
