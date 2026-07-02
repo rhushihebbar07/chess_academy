@@ -1,0 +1,82 @@
+/* ===========================================
+   GOOGLE FONTS
+=========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================================
+   ROOT VARIABLES
+=========================================== */
+
+:root{
+
+    /* COLORS */
+
+    --primary:#d4af37;
+    --primary-light:#f5d97d;
+
+    --bg:#050505;
+    --bg-secondary:#0d0d0d;
+    --surface:#141414;
+    --surface-light:#1e1e1e;
+
+    --white:#ffffff;
+    --gray:#9e9e9e;
+    --gray-light:#d7d7d7;
+
+    --success:#10b981;
+
+    --danger:#ef4444;
+
+    --glass:rgba(255,255,255,.06);
+
+    --border:rgba(255,255,255,.08);
+
+    /* TYPOGRAPHY */
+
+    --heading:'Cinzel',serif;
+    --body:'Inter',sans-serif;
+
+    /* FONT SIZE */
+
+    --fs-xs:.8rem;
+    --fs-sm:.95rem;
+    --fs-md:1rem;
+    --fs-lg:1.2rem;
+    --fs-xl:1.6rem;
+    --fs-2xl:2.4rem;
+    --fs-3xl:3.8rem;
+    --fs-4xl:5rem;
+    --fs-5xl:7rem;
+
+    /* SPACING */
+
+    --space-xs:.5rem;
+    --space-sm:1rem;
+    --space-md:2rem;
+    --space-lg:3rem;
+    --space-xl:5rem;
+    --space-2xl:8rem;
+
+    /* CONTAINER */
+
+    --container:1400px;
+
+    /* RADIUS */
+
+    --radius-sm:8px;
+    --radius-md:14px;
+    --radius-lg:24px;
+    --radius-xl:40px;
+
+    /* SHADOW */
+
+    --shadow:
+
+    0 25px 60px rgba(0,0,0,.4);
+
+    /* TRANSITION */
+
+    --transition:.4s ease;
+
+}
